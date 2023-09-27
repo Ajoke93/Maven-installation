@@ -1,0 +1,7 @@
+wget https://dlcdn.apache.org/maven/maven-3/3.9.4/binaries/apache-maven-3.9.4-bin.tar.gz -P /tmp
+sudo tar xf /tmp/apache-maven-3.9.4-bin.tar.gz -C /opt
+echo 'export M2_HOME=/opt/apache-maven-3.9.4' >> ~/.bashrc
+echo 'export M2=/opt/apache-maven-3.9.4/bin' >> ~/.bashrc
+echo 'export PATH=$M2:$PATH' >> ~/.bashrc
+source ~/.bashrc
+mvn -version
