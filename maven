@@ -4,4 +4,5 @@ echo 'export M2_HOME=/opt/apache-maven-3.9.4' >> ~/.bashrc
 echo 'export M2=/opt/apache-maven-3.9.4/bin' >> ~/.bashrc
 echo 'export PATH=$M2:$PATH' >> ~/.bashrc
 source ~/.bashrc
+export PATH=$M2_HOME/bin:$PATH
 mvn -version
